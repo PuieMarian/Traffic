@@ -1,0 +1,11 @@
+{
+  "name": "traffic",
+  "version": "1.0.0",
+  "description": "traffic_app",
+  "main": "traffic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marian Puie",
+  "license": "ISC"
+}

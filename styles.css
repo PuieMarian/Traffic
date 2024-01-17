@@ -1,0 +1,296 @@
+#incident-list-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+#incident-list-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+}
+
+
+#cluster-icon {
+  padding-top: 0px;
+  text-align: center;
+  color: white;
+  align-items: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 15px black;
+}
+
+#search-panel-container {
+  z-index: 1;
+}
+
+#show-help-button {
+  background-color: #000;
+  border-color: #7c7c7c;
+  opacity: 0.7;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+#bounding-box-button:hover {
+  background-color: #61ADE0;
+  color: white;
+}
+
+.show-traffic-layers {
+  color: #b2b2b2;
+  font: 700 14px / normal Gotham;
+  font-stretch: normal;
+  height: 16px;
+  letter-spacing: -0.25px;
+  width: 128px;
+}
+
+.style-relative {
+  font-family: Monaco;
+  font-size: 12px;
+  color: #333333;
+  background-color: #f4f4f4;
+}
+
+.app-info-text {
+  cursor: pointer;
+  font: 400 12px / normal Noway;
+  font-stretch: normal;
+  letter-spacing: -0.21px;
+}
+
+.app-info-text>a {
+  color: #7f7f7f;
+}
+
+.btn {
+  background-color: #8dc3eb;
+  border-color: #8dc3eb;
+  border-radius: 0;
+  color: #fff;
+  font: 700 14px/1.14 Gotham;
+  padding: 10px;
+}
+
+.btn:active {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+  box-shadow: none !important;
+  color: #ccc;
+}
+
+.row-border {
+  background-color: white;
+  border-top: 2px solid #f2f2f2;
+}
+
+#first-row {
+  background-color: white;
+  z-index: 1;
+  box-shadow: -5px 2px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+#secondary-row {
+  background-color: white;
+}
+
+#last-row {
+  margin: auto -15px 0 !important;
+  width: 364px;
+}
+
+.popup {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 450px;
+  height: 50px;
+  color: white;
+}
+
+#popup-wrapper {
+  display: block;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.popup-info {
+  background-color: #004b7f;
+}
+
+.popup-error {
+  background-color: #df1b12;
+}
+
+#popup-message {
+  font-family: Gotham;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.incident-details-list-item-button {
+  border: none;
+}
+
+.incident-details-list-normal-text {
+  color: #000;
+  font: 400 16px / normal Noway;
+  font-stretch: normal;
+  height: 19px;
+  letter-spacing: normal;
+  width: 160px;
+}
+
+.label {
+  color: #000;
+  font: 700 14px/1.14 Gotham;
+  font-stretch: normal;
+  letter-spacing: -0.25px;
+}
+
+.legend-font {
+  font: 700 12px/1.33 Gotham;
+  letter-spacing: normal;
+}
+
+
+.responsive-text {
+  font-size: 1.2vw;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  max-width: 364px;
+  background-color: #f2f2f2;
+}
+
+.style-relative {
+  color: #333;
+  font: 400 12px / normal Monaco;
+  font-stretch: normal;
+  letter-spacing: -0.21px;
+}
+
+.switch {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  width: 36px;
+}
+
+.switch input {
+  display: none;
+}
+
+.toggle {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.toggle.round {
+  border-radius: 22px;
+}
+
+.toggle.round:before {
+  border-radius: 50%;
+}
+
+.toggle:before {
+  background-color: #fff;
+  bottom: 2px;
+  content: "";
+  height: 16px;
+  left: 2px;
+  position: absolute;
+  transition: 0.2s;
+  width: 16px;
+}
+
+.traffic-icon {
+  height: 26px;
+  width: 26px;
+}
+
+.tt-traffic-icon [class^=tt-icon-circle-] {
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 26px;
+  height: 26px
+}
+
+.traffic-text {
+  color: #000;
+  font: 700 14px/1.14 Gotham;
+  font-stretch: normal;
+  height: 16px;
+  letter-spacing: -0.25px;
+  width: 111px;
+}
+
+body,
+#map {
+  height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Responsive styles */
+
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for screens with a maximum width of 768px */
+
+  #last-row {
+    width: 100%;
+    margin: auto 0 !important;
+  }
+
+  .sidebar {
+    max-width: 100%;
+  }
+
+  .responsive-text {
+    font-size: 1.5vw; /* Adjust font size for smaller screens */
+  }
+
+  /* Add more responsive styles as needed */
+}
+
+@media only screen and (max-width: 480px) {
+  /* Adjust styles for screens with a maximum width of 480px */
+
+  #show-help-button {
+    right: 5px;
+    top: 5px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  /* Add specific styles for smaller screens */
+}
+
+/* Add more media queries as needed */
+/* Added this rule to style the checked state */
+.switch input:checked + .toggle:before {
+  transform: translateX(16px);
+  /* Additional styles if needed for the checked state */
+}
+
+/* Added this rule to change background-color in the checked state */
+.switch input:checked + .toggle {
+  background-color: #8dc3eb;
+}
+
